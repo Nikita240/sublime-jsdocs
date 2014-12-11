@@ -53,6 +53,9 @@
   // A map to determine the value of variables, should hungarian notation (or similar) be in use
   "jsdocs_notation_map": [],
 
+  // Add a "@return" tag even if the return type cannot be determined
+  "jsdoc_insert_unknown_return_type": true,
+
   // Since there seems to be no agreed standard for "@return" or "@returns", use this setting to rename it as you wish.
   "jsdocs_return_tag": "@return",
 

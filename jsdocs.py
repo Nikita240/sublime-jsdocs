@@ -423,7 +423,7 @@ class JsdocsParser(object):
         # return value type might be already available in some languages but
         # even then ask language specific parser if it wants it listed
         retType = self.getFunctionReturnType(name, retval)
-        if retType is not None:
+        if (retType is not None and (retType or self.viewSettings.get('jsdoc_insert_unknown_return_type'))):
             typeInfo = ''
             if self.settings['typeInfo']:
                 typeInfo = ' %s${1:%s}%s' % (
