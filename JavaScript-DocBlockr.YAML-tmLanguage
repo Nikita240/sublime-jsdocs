@@ -1,0 +1,17 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: JavaScript DocBlockr
+scopeName: source.js.docblockr
+fileTypes: [js]
+uuid: 27fe7d8c-8d0a-4d30-96e3-47e47b9d6b77
+
+patterns:
+- name: comment.block.documentation.docblockr
+  begin: '/\*\*'
+  end: '\*/'
+  patterns:
+  - name: keyword.other.docblockr
+    match: '@\w+'
+
+- include: source.js
+...

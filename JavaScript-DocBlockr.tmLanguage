@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>js</string>
+	</array>
+	<key>name</key>
+	<string>JavaScript DocBlockr</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>/\*\*</string>
+			<key>end</key>
+			<string>\*/</string>
+			<key>name</key>
+			<string>comment.block.documentation.docblockr</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>@\w+</string>
+					<key>name</key>
+					<string>keyword.other.docblockr</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.js</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.js.docblockr</string>
+	<key>uuid</key>
+	<string>27fe7d8c-8d0a-4d30-96e3-47e47b9d6b77</string>
+</dict>
+</plist>
